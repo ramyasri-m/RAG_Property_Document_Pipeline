@@ -1,0 +1,22 @@
+# Environment
+.env
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+
+# Data
+data/sample_docs/*.pdf
+*.pdf
+
+# Virtual env
+venv/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+
+# Weaviate
+weaviate_data/

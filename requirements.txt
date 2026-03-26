@@ -1,0 +1,24 @@
+# Document processing
+pymupdf==1.24.1
+pdfplumber==0.11.0
+
+# Text splitting
+langchain==0.1.16
+langchain-community==0.0.34
+
+# Embeddings
+sentence-transformers==2.7.0
+
+# Vector database
+weaviate-client==3.26.2
+
+# LLM
+ollama==0.1.8
+
+# UI
+streamlit==1.33.0
+
+# Utilities
+python-dotenv==1.0.1
+pandas==2.2.2
+tqdm==4.66.2
