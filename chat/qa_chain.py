@@ -36,12 +36,14 @@ Answer based on the context above:"""
     if chat_history:
         messages.extend(chat_history[-4:])  # keep last 2 turns
     messages.append({"role": "user", "content": user_message})
-
-    response = ollama.chat(
-        model=OLLAMA_MODEL,
-        messages=messages,
-        options={"temperature": 0.1}
+    
+    ollama_client = ollama.Client(host=OLLAMA_URL)
+    response = ollama_client.chat(
+    model=OLLAMA_MODEL,
+    messages=messages,
+    options={"temperature": 0.1}
     )
+    
     return response["message"]["content"]
 
 
